@@ -3,38 +3,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-type Character = {
-  id: string;
-  number: string;
-  name: string;
-  firstName: string;
-  lastName: string;
-  role: string;
-  subtitle: string;
-  image: string;
-  backgroundImage: string;
-  bounty: string;
-  devilFruit: string;
-  dream: string;
-  description: string;
-  quote: string;
-  story: string;
-
-  birthday: string;
-  height: string;
-  origin: string;
-  affiliation: string;
-
-  theme: {
-    text: string;
-    gradient: string;
-    glow: string;
-    border: string;
-    line: string;
-    color: string;
-  };
-};
+import type { Character } from "@/types/character";
 
 type Props = {
   open: boolean;
